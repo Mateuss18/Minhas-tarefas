@@ -1,23 +1,29 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
+    <header>Minhas tarefas</header>
+    <FormTask />
   </div>
 </template>
 
 <script>
+import FormTask from './components/FormTask.vue'
 
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    FormTask
+  }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style scope>
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  font-size: 40px;
+  color: whitesmoke;
 }
 </style>
